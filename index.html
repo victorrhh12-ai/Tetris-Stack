@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Stack - Tema 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Tetris Stack</h1>
+            <div class="score-board">
+                <div>Pontuação: <span id="score">0</span></div>
+                <div>Linhas: <span id="lines">0</span></div>
+                <div>Nível: <span id="level">1</span></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-area">
+                <canvas id="tetris" width="300" height="600"></canvas>
+                <div class="controls">
+                    <h3>Controles:</h3>
+                    <p>← → : Mover</p>
+                    <p>↑ : Rotacionar</p>
+                    <p>↓ : Acelerar</p>
+                    <p>Espaço : Pausar</p>
+                    <button id="start-btn">Iniciar Jogo</button>
+                    <button id="reset-btn">Reiniciar</button>
+                </div>
+            </div>
+
+            <div class="next-piece">
+                <h3>Próxima Peça:</h3>
+                <canvas id="next-piece-canvas" width="100" height="100"></canvas>
+            </div>
+        </main>
+
+        <footer>
+            <p>Desenvolvido por [Vcitor Hugo] - Tetris Stack Tema 3</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
